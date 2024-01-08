@@ -1,0 +1,88 @@
+{
+  "car": [
+    {
+      "id": 1,
+      "name": "Toyota Avanza",
+      "capacity": "7",
+      "luggage": "2",
+      "price": "Rp. 350.000"
+    },
+    {
+      "id": 2,
+      "name": "Toyota Fortuner",
+      "capacity": "7",
+      "luggage": "2",
+      "price": "Rp. 550.000"
+    },
+    {
+      "id": 3,
+      "name": "Toyota Vellfire",
+      "capacity": "7",
+      "luggage": "2",
+      "price": "Rp. 650.000"
+    },
+    {
+      "id": 4,
+      "name": "Toyota Hi Ace",
+      "capacity": "12",
+      "luggage": "2",
+      "price": "Rp. 950.000"
+    },
+    {
+      "id": 5,
+      "name": "Toyota Agya",
+      "capacity": "5",
+      "luggage": "2",
+      "price": "Rp. 250.000"
+    },
+    {
+      "id": 6,
+      "name": "Daihatsu xenia",
+      "capacity": "7",
+      "luggage": "2",
+      "price": "Rp. 350.000"
+    },
+    {
+      "id": 7,
+      "name": "Daihatsu sigra",
+      "capacity": "7",
+      "luggage": "2",
+      "price": "Rp. 300.000"
+    },
+    {
+      "id": 8,
+      "name": "Daihatsu Ayla",
+      "capacity": "5",
+      "luggage": "2",
+      "price": "Rp. 250.000"
+    },
+    {
+      "id": 9,
+      "name": "Toyota Calya",
+      "capacity": "7",
+      "luggage": "2",
+      "price": "Rp. 350.000"
+    },
+    {
+      "id": 10,
+      "name": "Isuzu Elf",
+      "capacity": "12",
+      "luggage": "2",
+      "price": "Rp. 950.000"
+    },
+    {
+      "id": 11,
+      "name": "Mitsubishi Pajero",
+      "capacity": "7",
+      "luggage": "2",
+      "price": "Rp. 550.000"
+    },
+    {
+      "id": 12,
+      "name": "Big Bus",
+      "capacity": "50",
+      "luggage": "10",
+      "price": "Rp. 2.350.000"
+    }
+  ]
+}
