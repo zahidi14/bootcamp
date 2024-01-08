@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.yellow {
+  background-color: #f8d7a4;
+}
+.center-flex {
+  display: flex;
+  justify-content: center;
+}
+h2 {
+  font-size: 42px;
+  font-weight: 600;
+  color: #a55c30;
+}
+
+.card {
+  padding: 1.5rem;
+  height: auto;
+  width: calc(100% - 1.5rem);
+}
+.max {
+  max-width: 100%;
+}
+@media (min-width: 768px) {
+  img.fluid {
+    max-width: auto;
+    height: auto;
+  }
+}
