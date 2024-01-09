@@ -7,7 +7,7 @@ const Router = () => {
     <Routes>
       <Route path="/" element={<Main />} />
       <Route path="/explore" element={<Explore />} />
-      <Route path="/checkout" element={<Checkout />} />
+      <Route path="/checkout/:id" element={<Checkout />} />
     </Routes>
   );
 };

@@ -5,84 +5,96 @@
       "name": "Toyota Avanza",
       "capacity": "7",
       "luggage": "2",
-      "price": "Rp. 350.000"
+      "price": "Rp. 350.000",
+      "src": "./avanza.png"
     },
     {
       "id": 2,
       "name": "Toyota Fortuner",
       "capacity": "7",
       "luggage": "2",
-      "price": "Rp. 550.000"
+      "price": "Rp. 550.000",
+      "src": "./fortuner.png"
     },
     {
       "id": 3,
       "name": "Toyota Vellfire",
       "capacity": "7",
       "luggage": "2",
-      "price": "Rp. 650.000"
+      "price": "Rp. 650.000",
+      "src": "./alphard.png"
     },
     {
       "id": 4,
       "name": "Toyota Hi Ace",
       "capacity": "12",
       "luggage": "2",
-      "price": "Rp. 950.000"
+      "price": "Rp. 950.000",
+      "src": "./hiace.png"
     },
     {
       "id": 5,
       "name": "Toyota Agya",
       "capacity": "5",
       "luggage": "2",
-      "price": "Rp. 250.000"
+      "price": "Rp. 250.000",
+      "src": "./agya.png"
     },
     {
       "id": 6,
       "name": "Daihatsu xenia",
       "capacity": "7",
       "luggage": "2",
-      "price": "Rp. 350.000"
+      "price": "Rp. 350.000",
+      "src": "./avanza.png"
     },
     {
       "id": 7,
-      "name": "Daihatsu sigra",
+      "name": "Honda jazz",
       "capacity": "7",
       "luggage": "2",
-      "price": "Rp. 300.000"
+      "price": "Rp. 300.000",
+      "src": "./jazz.png"
     },
     {
       "id": 8,
-      "name": "Daihatsu Ayla",
+      "name": "Mitsubishi Xpander",
       "capacity": "5",
       "luggage": "2",
-      "price": "Rp. 250.000"
+      "price": "Rp. 350.000",
+      "src": "./xpander.png"
     },
     {
       "id": 9,
-      "name": "Toyota Calya",
+      "name": "Honda Brio",
       "capacity": "7",
       "luggage": "2",
-      "price": "Rp. 350.000"
+      "price": "Rp. 250.000",
+      "src": "./brio.png"
     },
     {
       "id": 10,
       "name": "Isuzu Elf",
       "capacity": "12",
       "luggage": "2",
-      "price": "Rp. 950.000"
+      "price": "Rp. 950.000",
+      "src": "./elf.png"
     },
     {
       "id": 11,
       "name": "Mitsubishi Pajero",
       "capacity": "7",
       "luggage": "2",
-      "price": "Rp. 550.000"
+      "price": "Rp. 550.000",
+      "src": "./pajero.png"
     },
     {
       "id": 12,
       "name": "Big Bus",
       "capacity": "50",
       "luggage": "10",
-      "price": "Rp. 2.350.000"
+      "price": "Rp. 2.350.000",
+      "src": "./bus.png"
     }
   ]
 }
