@@ -116,8 +116,6 @@ const Checkout = () => {
             </div>
 
             <h3>Total Biaya: {check.price}</h3>
-
-            {/* You can add a payment component or further checkout steps here */}
           </Col>
         </Row>
       </Container>
