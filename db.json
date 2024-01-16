@@ -3,6 +3,7 @@
     {
       "id": 1,
       "name": "Toyota Avanza",
+      "type": "MPV",
       "capacity": "7",
       "luggage": "2",
       "price": "Rp. 350.000",
@@ -11,6 +12,7 @@
     {
       "id": 2,
       "name": "Toyota Fortuner",
+      "type": "SUV",
       "capacity": "7",
       "luggage": "2",
       "price": "Rp. 550.000",
@@ -19,6 +21,7 @@
     {
       "id": 3,
       "name": "Toyota Vellfire",
+      "type": "MPV",
       "capacity": "7",
       "luggage": "2",
       "price": "Rp. 650.000",
@@ -27,6 +30,7 @@
     {
       "id": 4,
       "name": "Toyota Hi Ace",
+      "type": "Short BUS",
       "capacity": "12",
       "luggage": "2",
       "price": "Rp. 950.000",
@@ -35,6 +39,7 @@
     {
       "id": 5,
       "name": "Toyota Agya",
+      "type": "LCGC",
       "capacity": "5",
       "luggage": "2",
       "price": "Rp. 250.000",
@@ -43,6 +48,7 @@
     {
       "id": 6,
       "name": "Daihatsu xenia",
+      "type": "MPV",
       "capacity": "7",
       "luggage": "2",
       "price": "Rp. 350.000",
@@ -51,6 +57,7 @@
     {
       "id": 7,
       "name": "Honda jazz",
+      "type": "City Car",
       "capacity": "7",
       "luggage": "2",
       "price": "Rp. 300.000",
@@ -59,6 +66,7 @@
     {
       "id": 8,
       "name": "Mitsubishi Xpander",
+      "type": "MPV",
       "capacity": "5",
       "luggage": "2",
       "price": "Rp. 350.000",
@@ -67,6 +75,7 @@
     {
       "id": 9,
       "name": "Honda Brio",
+      "type": "LCGC",
       "capacity": "7",
       "luggage": "2",
       "price": "Rp. 250.000",
@@ -75,14 +84,16 @@
     {
       "id": 10,
       "name": "Isuzu Elf",
+      "type": "Short BUS",
       "capacity": "12",
       "luggage": "2",
       "price": "Rp. 950.000",
-      "src": "./elf.png"
+      "src": "./hiace.png"
     },
     {
       "id": 11,
       "name": "Mitsubishi Pajero",
+      "type": "SUV",
       "capacity": "7",
       "luggage": "2",
       "price": "Rp. 550.000",
@@ -91,6 +102,7 @@
     {
       "id": 12,
       "name": "Big Bus",
+      "type": "BUS",
       "capacity": "50",
       "luggage": "10",
       "price": "Rp. 2.350.000",

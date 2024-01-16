@@ -1,5 +1,6 @@
 const init = {
   car: [],
+  loading: true,
 };
 
 const carReducer = (state = init, action) => {
@@ -7,6 +8,12 @@ const carReducer = (state = init, action) => {
     return {
       ...state,
       car: action.payload,
+    };
+  }
+  if (action.type === "SET_LOADING") {
+    return {
+      ...state,
+      loading: action.payload,
     };
   }
   return state;

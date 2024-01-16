@@ -1,5 +1,8 @@
 import axios from "axios";
 
+const setLoading = (value) => {
+  return { type: "SET_LOADING", payload: value };
+};
 export const fetchCar = () => {
   return (dispatch) => {
     axios
@@ -10,6 +13,11 @@ export const fetchCar = () => {
       })
       .catch((err) => {
         console.log({ err: err });
+      })
+      .finally(() => {
+        setTimeout(() => {
+          dispatch(setLoading(false));
+        }, 2000);
       });
   };
 };

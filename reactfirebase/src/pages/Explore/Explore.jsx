@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Spinner } from "react-bootstrap";
 import axios from "axios";
 import { CardCont } from "../../component";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCar } from "../../redux/action";
-
+import explPic from "../../assets/expl.png";
 const Explore = () => {
   const dispatch = useDispatch();
-  const { car } = useSelector((state) => state.carReducer);
+  const { car, loading } = useSelector((state) => state.carReducer);
 
   useEffect(() => {
     dispatch(fetchCar());
@@ -29,22 +29,47 @@ const Explore = () => {
     console.log(id);
   };
 
+  const Spin = () => {
+    return (
+      <div className="spiner text-center">
+        <h3>Loading</h3>
+        <Spinner animation="border" role="status">
+          <span className="visually-hidden">Loading...</span>
+        </Spinner>
+      </div>
+    );
+  };
+
   return (
-    <Container>
-      <Row>
-        {car.map((i) => (
-          <Col key={i.id} className="col-lg-4 col-md-6 col-sm-12 mr-4 mb-4">
-            <Link to={`/checkout/${i.id}`}>
-              <CardCont
-                title={i.name}
-                price={i.price}
-                checkot={() => intoCheckout(i.id)}
-              />
-            </Link>
-          </Col>
-        ))}
-      </Row>
-    </Container>
+    <>
+      <div className="head text-center mt-4 mb-4">
+        <img src={explPic} className="mb-4" />
+        <h3>Mobil Tersedia</h3>
+      </div>
+
+      <Container>
+        <Row>
+          {" "}
+          {loading ? (
+            <Spin />
+          ) : (
+            car.map((i) => (
+              <Col key={i.id} className="col-lg-4 col-md-6 col-sm-12 mr-4 mb-4">
+                <Link to={`/checkout/${i.id}`}>
+                  <CardCont
+                    title={i.name}
+                    price={i.price}
+                    url={i.src}
+                    capacity={i.capacity}
+                    luggage={i.luggage}
+                  />
+                </Link>
+              </Col>
+            ))
+          )}
+        </Row>
+      </Container>
+    </>
   );
 };
 

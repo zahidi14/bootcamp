@@ -1,4 +1,5 @@
 import CardCont from "./card/CardCont";
-import Nav from "./nav/Nav";
-
-export { CardCont, Nav };
+import Navigate from "./nav/Navigate";
+import Caraousel from "./caraousel/Caraousel";
+import Footer from "./Footer/Footer";
+export { CardCont, Navigate, Caraousel, Footer };

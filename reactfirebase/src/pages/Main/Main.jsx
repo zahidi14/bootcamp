@@ -6,26 +6,19 @@ import diamond from "../../assets/Vector.png";
 import test from "../../assets/rud.png";
 import "../../style.scss";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import { Caraousel } from "../../component";
 
 const Main = () => {
   return (
     <>
-      <Container className="container-fluid">
-        <Row>
-          <Col></Col>
-          <Col>
-            <h1>
-              Embark on Unforgettable Journeys with Our Premier Tour and Travel
-              Services
-            </h1>
-          </Col>
-        </Row>
-        <Row className="pb-4">
+      <Caraousel />
+      <Container className="mt-4">
+        <Row className="pb-4 mt-4 ">
           <Col>
             <img src={bg} alt="" className="fluid " />
           </Col>
           <Col className="text-center">
-            <h2>Ordinary Best tour nad Travel Service</h2>
+            <h2> Nikmati Perjalanan Anda dengan Layanan Sewa Mobil Terbaik</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
               elit sed pretium, egestas sed sit. Fames tincidunt rhoncus viverra
