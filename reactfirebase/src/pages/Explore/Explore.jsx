@@ -44,7 +44,7 @@ const Explore = () => {
   return (
     <div className={darkMode ? "light" : "dark"}>
       <div className="head text-center mt-4 mb-4">
-        <img src={explPic} className="mb-4" />
+        <img src={explPic} className="mb-4 img-fluid" />
         <h3>Mobil Tersedia</h3>
       </div>
 
@@ -55,7 +55,10 @@ const Explore = () => {
             <Spin />
           ) : (
             car.map((i) => (
-              <Col key={i.id} className="col-lg-4 col-md-6 col-sm-12 mr-4 mb-4">
+              <Col
+                key={i.id}
+                className="col-lg-4 col-md-6 col-sm-12 mr-4 mb-4 d-flex justify-content-center"
+              >
                 <Link to={`/checkout/${i.id}`}>
                   <CardCont
                     title={i.name}

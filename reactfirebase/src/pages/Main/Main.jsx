@@ -76,7 +76,7 @@ const Main = () => {
         </Row>
       </Container>
       <Container className="container-fluid max pt-4 pb-4 yellow">
-        <Row className="text-center center-flex">
+        <Row className="text-center center-flex ">
           <h2>Testimonials</h2>
           <div className="card">
             <Col>
