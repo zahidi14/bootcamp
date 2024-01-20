@@ -1,8 +1,4 @@
-## Headers
-
-Changelog
-
-### Ordered List
+## Changelog
 
 1. Fix tampilan responsif
 2. Tambahan implementasi cookies untuk switch dark/light mode
