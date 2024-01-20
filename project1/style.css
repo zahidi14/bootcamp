@@ -5,7 +5,26 @@ body {
   padding: 0;
   border: 0;
   font-family: "Noto Sans", sans-serif;
+  color: #333;
+  background-color: #fafafa;
   font-size: 12px;
+}
+
+body.dark {
+  background-color: #333;
+  color: #fafafa;
+}
+body.dark #fleet .card {
+  background-color: #303846;
+}
+body.dark #fleet .car-brand {
+  color: #95c6ff;
+}
+body.dark #testimonials .card {
+  background-color: #303846;
+}
+body.dark #contact .form {
+  background-color: #303846;
 }
 
 .head {
@@ -95,7 +114,6 @@ header .burg {
 #home {
   width: 100%;
   height: 100vh;
-  background-color: #fff;
   display: flex;
   justify-content: space-between;
 }
@@ -136,7 +154,6 @@ header .burg {
   position: relative;
   padding: 0;
   z-index: 9;
-  background-color: #fafafa;
   height: 546px;
   display: flex;
   justify-content: center;
@@ -170,7 +187,6 @@ header .burg {
 
 #fleet {
   height: 1000px;
-  background-color: #fafafa;
   padding: 20px 60px;
   text-align: center;
 }
@@ -311,7 +327,58 @@ footer .social ul li img {
   margin-right: 10px;
 }
 
+.toggle {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  z-index: 99999999;
+}
+.toggle .checkbox {
+  opacity: 0;
+  position: absolute;
+}
+.toggle .checkbox-label {
+  background-color: #111;
+  width: 24px;
+  height: 50px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggle .fa-moon {
+  color: #95c6ff;
+  font-size: 20px;
+}
+.toggle .fa-sun {
+  color: #f39c12;
+  font-size: 20px;
+}
+.toggle .checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateY(28px);
+}
+
 @media only screen and (max-width: 600px) {
+  .title {
+    font-size: 32px;
+  }
+  .toggle {
+    left: 0;
+    top: 35%;
+  }
   header {
     padding: 0 16px;
   }

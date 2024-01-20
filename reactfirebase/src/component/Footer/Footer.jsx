@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="footer p-4">
       <Container className="foot">
         <Row>
-          <Col>
+          <Col xs={12} md={4}>
             <h3>Sewa Mobil</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis
@@ -18,7 +18,7 @@ const Footer = () => {
               iaculis tellus.
             </p>
           </Col>
-          <Col>
+          <Col xs={12} md={4}>
             <h3>Informasi lebih lanjut? Hubungi Kami</h3>
             <Row>
               <Form>
@@ -31,7 +31,7 @@ const Footer = () => {
               </Form>
             </Row>
           </Col>
-          <Col>
+          <Col xs={12} md={4}>
             <h3>Informasi Kontak </h3>
             <ListGroup>
               <ListGroup.Item>

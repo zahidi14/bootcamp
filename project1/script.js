@@ -17,16 +17,22 @@ document.addEventListener("DOMContentLoaded", function () {
     curIndex = (curIndex - 1 + 3) % 3;
     slideShow(curIndex);
   }
+  function startInterval() {
+    interval = setInterval(next, 1000);
+  }
+  function stopInterval() {
+    clearInterval(interval);
+  }
+  if (window.innerWidth < 600) {
+    startInterval();
+    document
+      .querySelector(".card-container")
+      .addEventListener("mouseover", stopInterval);
 
-  interval = setInterval(next, 3000);
-
-  document
-    .querySelector(".card-container")
-    .addEventListener("mouseover", () => clearInterval(interval));
-
-  document
-    .querySelector(".card-container")
-    .addEventListener("mouseout", () => (interval = setInterval(next, 1000)));
+    document
+      .querySelector(".card-container")
+      .addEventListener("mouseout", startInterval);
+  }
 });
 
 function stickyComponent() {
@@ -83,4 +89,13 @@ function closeStickyComponent() {
 }
 
 stickyComponent();
-window.addEventListener("resize", createStickyComponent);
+// window.addEventListener("resize", createStickyComponent);
+
+function dark() {
+  const check = document.querySelector("#checkbox");
+  check.addEventListener("change", () => {
+    document.body.classList.toggle("dark");
+  });
+}
+
+dark();

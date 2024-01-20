@@ -7,15 +7,18 @@ import test from "../../assets/rud.png";
 import "../../style.scss";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Caraousel } from "../../component";
+import { useSelector } from "react-redux";
 
 const Main = () => {
+  const { darkMode } = useSelector((state) => state.themeReducer);
+  console.log({ main: darkMode });
   return (
-    <>
+    <div className={darkMode ? "light" : "dark"}>
       <Caraousel />
       <Container className="mt-4">
         <Row className="pb-4 mt-4 ">
-          <Col>
-            <img src={bg} alt="" className="fluid " />
+          <Col xs={12} md={6}>
+            <img src={bg} alt="" className="img-fluid" xs={12} md={6} />
           </Col>
           <Col className="text-center">
             <h2> Nikmati Perjalanan Anda dengan Layanan Sewa Mobil Terbaik</h2>
@@ -92,7 +95,7 @@ const Main = () => {
           </div>
         </Row>
       </Container>
-    </>
+    </div>
   );
 };
 

@@ -1,9 +1,16 @@
 import { Provider } from "react-redux";
 import Router from "./Route/Router";
 import store from "./redux/store";
-import { Caraousel, Footer, Navigate } from "./component";
+import { Footer, Navigate, Toogle } from "./component";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faLocationDot, faPhone, fas } from "@fortawesome/free-solid-svg-icons";
+import "./style.scss";
+import {
+  faLocationDot,
+  faMoon,
+  faPhone,
+  faSun,
+  fas,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   faTwitter,
   faFontAwesome,
@@ -19,13 +26,17 @@ function App() {
     faLocationDot,
     faPhone,
     faInstagram,
-    faWhatsapp
+    faWhatsapp,
+    faMoon,
+    faSun
   );
+
   return (
     <Provider store={store}>
       <Navigate />
 
       <Router />
+      <Toogle />
       <Footer />
     </Provider>
   );

@@ -3,6 +3,14 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+.light .card {
+  background-color: #fafafa;
+  color: #333;
+}
+.dark {
+  background-color: #333;
+  color: #fafafa;
+}
 
 .yellow {
   background-color: #f8d7a4;
@@ -12,7 +20,7 @@ body {
   justify-content: center;
 }
 h2 {
-  font-size: 42px;
+  font-size: 32px;
   font-weight: 600;
   color: #a55c30;
 }
@@ -26,6 +34,9 @@ h2 {
   max-width: 100%;
 }
 @media (min-width: 768px) {
+  h2 {
+    font-size: 42px;
+  }
   img.fluid {
     max-width: auto;
     height: auto;

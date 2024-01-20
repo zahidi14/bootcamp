@@ -6,10 +6,11 @@ import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCar } from "../../redux/action";
 import explPic from "../../assets/expl.png";
+
 const Explore = () => {
   const dispatch = useDispatch();
   const { car, loading } = useSelector((state) => state.carReducer);
-
+  const { darkMode } = useSelector((state) => state.themeReducer);
   useEffect(() => {
     dispatch(fetchCar());
   }, [dispatch]);
@@ -41,7 +42,7 @@ const Explore = () => {
   };
 
   return (
-    <>
+    <div className={darkMode ? "light" : "dark"}>
       <div className="head text-center mt-4 mb-4">
         <img src={explPic} className="mb-4" />
         <h3>Mobil Tersedia</h3>
@@ -69,7 +70,7 @@ const Explore = () => {
           )}
         </Row>
       </Container>
-    </>
+    </div>
   );
 };
 
